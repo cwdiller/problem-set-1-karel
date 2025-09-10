@@ -15,23 +15,35 @@
 
 import karel
 
-
 def main():
-    """ Function to cause Karel to retrieve the newspaper. """
-    # You can add your sequence of commands below here!
-    # Remember you can use the defined helper functions!
-
+   move_to_newspaper() #these three are pretty simple, its just get it
+   pick_up_paper()  #got it
+   return_to_start()  #good
 
 def move_to_newspaper():
-    """ Helping function to move Karel to the newspaper location. """
+    turn_right()  #left would be pretty useless, theres a wall
+    move() # karel moves down
+    turn_left() # karel faces the door
+    for c in range(2): # karel moves two times forward
+        move()
 
-
-
-def pick_up_paper():
-    """ Helping function to have Karel pick up the newspaper. """
-    # Yes, this will probably be VERY simple and short
-
-
+def pick_up_paper(): 
+    move() # karel moves to the paper
+    pick_beeper() # karel collects the paper
+    turn_around() # karel turns around
+    move() # karel returns to where she was before she picked up the paper
 
 def return_to_start():
-    """ Helping function to move Karel back to its starting position. """
+    for c in range (2): # karel moves to her original spot
+        move()
+    turn_right() #karel turns right
+    move() #karel moves into the corner
+
+def turn_right():
+	for c in range(3): # c is the greatest letter
+	    turn_left() # one right is three lefts of course
+
+     
+def turn_around():
+    for c in range(2): # turns around
+        turn_left()
