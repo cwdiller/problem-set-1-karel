@@ -16,7 +16,7 @@ import karel
 
 
 def main():
-    turn_around()
+    turn_around() #if karel is not facing west already, she will turn until she faces west
 
     while not_facing_north(): #if karel is not facing north, she will:
         if left_is_blocked(): #paint the wall if its on her left, otherwise she:
@@ -39,7 +39,7 @@ def turn_right():
 
      
 def turn_around():
-    while not_facing_west(): # turns around
+    while not_facing_west(): # turning left until facing west
         turn_left()
 
 def go_inside():
