@@ -1,10 +1,10 @@
 #========================================================
 # Filename: Karel_Newspaper.py
 # 
-# Your name:
-# Who did you work with (if anyone)?:
-# If you consulted AI, link to transcript:
-# Estimate for time spent on this problem (in hrs)?:
+# Your name: Corbin Diller
+# Who did you work with (if anyone)?: N/A
+# If you consulted AI, link to transcript: N/A
+# Estimate for time spent on this problem (in hrs)?: 1h
 #========================================================
 
 # I've just laid out a basic starting function below. 
