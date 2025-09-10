@@ -1,10 +1,10 @@
 #====================================================
 # Filename: Karel_Painting.py
 # 
-# Your name:
-# Who did you work with (if anyone)?:
-# If you consulted AI, link to transcript: 
-# Estimate for time spent on this prob (in hrs)?:
+# Your name: Corbin Diller
+# Who did you work with (if anyone)?: N/A
+# If you consulted AI, link to transcript: N/A
+# Estimate for time spent on this prob (in hrs)?: ~1.5
 #====================================================
 
 # I've just laid out a basic starting function below, but remember that you
@@ -39,7 +39,7 @@ def turn_right():
 
      
 def turn_around():
-    for c in range(2): # turns around
+    while not_facing_west(): # turns around
         turn_left()
 
 def go_inside():
